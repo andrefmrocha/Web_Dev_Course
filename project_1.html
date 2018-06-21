@@ -39,6 +39,10 @@
                 <h1>I also sell pizza my doods</h1>
                 <h3>Place Order</h3>
                 <form method="get" action="place-order.php">
+                    <h4>Delivery</h4>
+
+                    <input name="deliveryMethod" type="radio" value="delivery"/>Delivery <br/>
+                    <input name="deliveryMethod" type="radio" value="pickup"/>Pickup<br/>
                     <h4>Address</h4>
                     <input name="address1" placeholder="Address Line 1" class="lg-input"/> <br/>
                     <input name="address2" placeholder="Address Line 2" class="lg-input"/> <br/>
@@ -49,12 +53,12 @@
                     <input name="state" placeholder="State" class="sm-input"/> <br/>
                     <input name="zip" placeholder="Zip Code" class="sm-input"/> <br/>
                     <h4>Ingredients</h4>
-                    <input name="pepperoni" type="checkbox"/> Pepperoni <br/>
-                    <input name="salami" type="checkbox"/> Salami <br/>
-                    <input name="bacon" type="checkbox"/> Bacon<br/>
-                    <input name="sausage" type="checkbox"/> Italian Sausage<br/>
-                    <input name="onion" type="checkbox"/> Onion<br/>
-                    <input name="peppers" type="checkbox"/> Green Peppers<br/>
+                    <input name="ingredients" type="checkbox" value="pepperoni"/> Pepperoni <br/>
+                    <input name="ingredients" type="checkbox" value="salami"/> Salami <br/>
+                    <input name="ingredients" type="checkbox" value="bacon"/> Bacon<br/>
+                    <input name="ingredients" type="checkbox" value="sausage"/> Italian Sausage<br/>
+                    <input name="ingredients" type="checkbox" value="onion"/> Onion<br/>
+                    <input name="ingredients" type="checkbox" value="peppers"/> Green Peppers<br/>
 
                 </form>
 
