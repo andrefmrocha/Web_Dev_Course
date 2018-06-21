@@ -111,6 +111,6 @@ gen### ArchLinuxPackages template
 
 pkg/
 src/
-
+videos/
 .idea/
-
+audio/
