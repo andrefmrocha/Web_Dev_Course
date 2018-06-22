@@ -10,56 +10,24 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-    <header height="200">
-        <h1>My site</h1>
-        <h3>All of the articles in this website</h3>
-        <h6>All of the articles in this website</h6>
-    </header>
-    <br/>
-    <main>
-        <table border="1px" width="50%">
-                <thead>
-                    <tr>
-                        <th width="300">Type</th>
-                        <th width="500">Ingredients</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Pepperoni</td>
-                        <td>Pepperoni, Mozzarella</td>
-                        <td>5.99$</td>
-                    </tr>
-                    <tr>
-                        <td>Meat Lovers</td>
-                        <td>Pepperoni, Italian sausage, ham, bacon, salami</td>
-                        <td>9.99$</td>
-                    </tr>
-                    <tr>
-                        <td>Hawaiian</td>
-                        <td>Ham and Pineapple, cheese</td>
-                        <td>4.99$</td>
-                    </tr>
-                </tbody>
-        </table>
+        <header id="main-header">
+            <h1 id="site-title">Best News Ever!</h1>
+        </header>
         <br/>
         <br/>
-        <section>
-            <video width="540" height="320" controls>
-                <source src="./videos/Foods.mp4" type="video/mp4">
-                Your browser does not support HTML5
-            </video>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <audio loop id="elevator">
-                <source src="./audio/Elevator-music.mp3">
-            </audio>
+        <section id="top-stories">
+            <article>
+                <div class="article-img" style="background:url(drumpf.jpg)"> </div>
+                <h3>Trump challenges Kim </h3>
+                <p>Trump once again crosses the line when he decides to
+                    try and challenge Kim to a Wild West battle... <a href="#" class="more-link"> Read more...</a> </p>
+            </article>
+            <article>
+                <div class="article-img" style="background:url(coke.jpg)"> </div>
+                <h3>Coke is found on Mars</h3>
+                <p>Coke, not the one that you buy on the hood, has been
+                    found on Mars, scientists believe to be the Coca-Cola brand... <a href="#" class="more-link"> Read more...</a> </p>
+            </article>
         </section>
-        <br/>
-    </main>
-    <footer>&copy;Copyright 2018</footer>
     </body>
 </html>
