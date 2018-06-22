@@ -1,0 +1,21 @@
+body {
+    background: rgba(255,200,100,0.5);
+    color: #0af;
+}
+
+
+body > header >h3{
+    background: #fff;
+    color: #0f0
+}
+
+
+h3{
+color: #000;
+}
+
+
+body h3{
+color: #f00;
+}
+
