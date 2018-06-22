@@ -7,6 +7,7 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
     margin: 0px;
+    text-shadow: 2px 5px 50px rgba(0,0,0,.3);
 }
 
 body h1{
@@ -31,6 +32,8 @@ article{
     max-width: 33%;
     display: inline-block;
     border: 2px solid #000;
+    background-color: darkred;
+    box-shadow: 5px 5px 50px 10px rgba(0,0,0,.3);
 }
 
 /*article img{
@@ -52,8 +55,12 @@ article{
 
 a{
     text-decoration: underline line-through overline;
+    text-decoration-style: solid;
 }
 
 p{
     letter-spacing: 1px;
+    word-spacing: 2px;
+    text-indent: 1px;
+    text-align: center;
 }
