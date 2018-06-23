@@ -50,6 +50,7 @@ article{
     background-color: darkred;
     box-shadow: 5px 5px 50px 10px rgba(0,0,0,.3);
     transition: box-shadow 500ms, background 3s;
+    /*transition-delay: 500ms;*/
 }
 
 
