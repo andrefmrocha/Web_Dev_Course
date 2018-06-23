@@ -23,9 +23,20 @@ body h1{
 #main-header{
     border-bottom: 2px solid #000;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     background: rgba(255,255,255,.5);
     top: 0px;
+    left: 0px;
+}
+
+#main-header::before{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 40px;
+    background: black;
+    position: fixed;
+    top: 14px;
 }
 
 #top-stories{
@@ -38,8 +49,14 @@ article{
     border: 2px solid #000;
     background-color: darkred;
     box-shadow: 5px 5px 50px 10px rgba(0,0,0,.3);
+    transition: box-shadow 500ms, background 3s;
 }
 
+
+article:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.7);
+    background: #aaa;
+}
 /*article img{
     max-width: 100%;
 }*/
@@ -94,4 +111,12 @@ a:hover{
 
 article:active{
     opacity: .4;
+}
+
+.my-text{
+    height: 600px;
+    max-height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+    /*border:2px solid black;*/
 }
