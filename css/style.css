@@ -64,3 +64,25 @@ p{
     text-indent: 1px;
     text-align: center;
 }
+
+a:hover{
+    color:#8f8;
+}
+
+.my-input{
+    display: block;
+    width: 90%;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.my-input:focus{
+    background: #d5ffc2;
+    color: #0f8034;
+    outline: none;
+    border: 1px solid black;
+}
+
+article:active{
+    opacity: .4;
+}
