@@ -46,6 +46,9 @@ article{
     background-size: cover !important;
     background-position: center !important;
     border-bottom: 5px solid #000F00;
+   /* width:200px;
+    border-radius: 50px;*/
+    /*Adds a circle*/
 }
 
 .more-link{
@@ -74,6 +77,8 @@ a:hover{
     width: 90%;
     margin: 10px;
     padding: 10px 20px;
+    border-radius: 10px 20px 2px 50px;
+    border: 1px solid #ddd;
 }
 
 .my-input:focus{
