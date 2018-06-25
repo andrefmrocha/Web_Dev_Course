@@ -94,13 +94,14 @@ a:hover{
     color:#8f8;
 }
 
-.my-input{
+.my-input, .my-text-area{
     display: block;
     width: 90%;
     margin: 10px;
     padding: 10px 20px;
     border-radius: 10px 20px 2px 50px;
     border: 1px solid #ddd;
+    resize: none;
 }
 
 .my-input:focus{
