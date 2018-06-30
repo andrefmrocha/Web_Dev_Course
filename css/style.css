@@ -7,7 +7,6 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
     text-shadow: 2px 5px 50px rgba(0,0,0,.3);
-    margin-top: 100px;
 }
 
 body h1{
@@ -18,11 +17,13 @@ body h1{
 
 #site-title{
     font-family: 'Press Start 2P', sans-serif;
+    display: inline-block;
+    margin-top: -5px;
 }
 
 #main-header{
     border-bottom: 2px solid #000;
-    position: absolute;
+    position: relative;
     width: 100vw;
     background: rgba(255,255,255,.5);
     top: 0;
@@ -36,11 +37,7 @@ body h1{
     height: 40px;
     background: black;
     position: absolute;
-    top: 14px;
-}
-
-#top-stories{
-    width: 1000px;
+    top: -8px;
 }
 
 article{
@@ -54,71 +51,32 @@ article{
 }
 
 
-article:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,.7);
-    background: #aaa;
-}
-/*article img{
-    max-width: 100%;
-}*/
-
-.article-img{
-    height: 200px;
-    width: 100%;
-    background-size: cover !important;
-    background-position: center !important;
-    border-bottom: 5px solid #000F00;
-   /* width:200px;
-    border-radius: 50px;*/
-    /*Adds a circle*/
-}
-
-.more-link{
-    font-style: italic;
-    font-weight: 700;
-}
-
-a{
-    text-decoration: underline line-through overline;
-    text-decoration-style: solid;
-}
-
-p{
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    text-indent: 1px;
-    text-align: center;
-}
 
 a:hover{
-    color:#8f8;
+    color:#d21;
 }
 
-.my-input, .my-text-area{
+.profile-menu{
+    list-style: none;
+    float: right;
+}
+
+.submenu
+{
+    list-style: none;
+    padding: 0px;
+    border: 1px solid #aaa;
+    background: #fff;
+    margin-top: 35px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,.3);
+    width: 300px;
+}
+
+.submenu a{
+    text-decoration: none;
+    padding: 10px 10px;
     display: block;
-    width: 90%;
-    margin: 10px;
-    padding: 10px 20px;
-    border-radius: 10px 20px 2px 50px;
-    border: 1px solid #ddd;
-    resize: none;
-}
-
-.my-input:focus{
-    background: #d5ffc2;
-    color: #0f8034;
-    outline: none;
-    border: 1px solid black;
-}
-
-article:active{
-    opacity: .4;
-}
-
-.my-text{
-    height: 600px;
-    max-height: 200px;
-    overflow: scroll;
-    overflow-x: hidden;
-    /*border:2px solid black;*/
+    color: #333;
+    text-shadow: none;
+    font-weight: 700;
 }
