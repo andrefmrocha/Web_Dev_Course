@@ -59,6 +59,7 @@ a:hover{
 .profile-menu{
     list-style: none;
     float: right;
+
 }
 
 .submenu
@@ -67,9 +68,16 @@ a:hover{
     padding: 0px;
     border: 1px solid #aaa;
     background: #fff;
-    margin-top: 35px;
+    margin-top: 17px;
     box-shadow: 2px 2px 15px rgba(0,0,0,.3);
     width: 300px;
+    position: absolute;
+    right: 10px;
+    display: none;
+}
+
+.submenu.active{
+    display: block;
 }
 
 .submenu a{
@@ -79,4 +87,12 @@ a:hover{
     color: #333;
     text-shadow: none;
     font-weight: 700;
+}
+
+.submenu a:hover{
+    background: #aaa;
+}
+
+[data-trigger = "dropdown"] a{
+    padding-bottom: 35px;
 }
