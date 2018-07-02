@@ -4,8 +4,24 @@ $(document).ready(function () {
         submenu.addClass('active');
         $('.profile-menu').on('mouseleave', function () {
             submenu.removeClass('active');
-
         })
+    });
+
+    $('#prepend, #append, #replace').on('click', function (event) {
+        var el = $(event.currentTarget);
+        var action = el.attr('id');
+        if (action == "prepend")
+        {
+
+        }
+        else if(action == "append")
+        {
+
+        }
+        else if (action == "replace")
+        {
+
+        }
     });
 
 
