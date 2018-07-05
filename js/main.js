@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    socks(".my-selector").addClass("MYCLASS");
+
     var el = document.getElementById('text');
     $(document).on('contextmenu', function () {
         return false;
@@ -67,7 +69,4 @@ $(document).ready(function () {
 
         $('.text').val('');
     });
-
-
-
 });
