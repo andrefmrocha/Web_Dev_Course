@@ -1,5 +1,26 @@
 $(document).ready(function () {
     var el = document.getElementById('text');
+    $(document).on('contextmenu', function () {
+        return false;
+    });
+    $(document).on('click', function () {
+
+    })
+    $(document).on('mousedown', function (event) {
+        event.preventDefault();
+        if (event.which == 3)
+        {
+            console.log(event.pageY, event.pageX);
+            $('#context').css({
+                top: event.pageY,
+                left: event.pageX
+            });
+
+            $('#context').fadeIn();
+        }
+        $('#context').fadeOut();
+
+    });
 
     $('[href="https://google.com" ]').on('click', function (event) {
        console.log('Linking to google?');
