@@ -133,3 +133,11 @@ section{
 .context-menu a:hover{
     background-color: #eee;
 }
+
+.context-menu a.hidden{
+    display: none;
+}
+
+.context-menu a.hidden.shown{
+    display: block;
+}

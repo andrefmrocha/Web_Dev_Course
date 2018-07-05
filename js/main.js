@@ -7,10 +7,19 @@ $(document).ready(function () {
 
     })
     $(document).on('mousedown', function (event) {
-        event.preventDefault();
+        event.stopPropagation();
         if (event.which == 3)
         {
-            console.log(event.pageY, event.pageX);
+            $('.hidden').removeClass('shown');
+
+            if ($(event.target).is('img'))
+            {
+                $('.saveimg, .newtab').addClass('shown');
+            }
+            else if ($(event.target).is('a'))
+            {
+                $('.newtab').addClass('shown');
+            }
             $('#context').css({
                 top: event.pageY,
                 left: event.pageX
@@ -18,7 +27,9 @@ $(document).ready(function () {
 
             $('#context').fadeIn();
         }
-        $('#context').fadeOut();
+        else {
+            $('#context').fadeOut();
+        }
 
     });
 
