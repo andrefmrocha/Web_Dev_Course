@@ -87,10 +87,11 @@ $(function () {
             $('.status').show();
             $('.status').html('INVALID');
         }
+    });
+
+    $('p').each(function () {
+        console.log($(this).text());
     })
-    if ($(':contains("Lorem")').hasClass('my-selector'))
-    {
-        $('p:contains("Lorem")').html("This is a paragraph. Wow. And it had Lorem in it. Double wow.");
-    }
+
 
 });
