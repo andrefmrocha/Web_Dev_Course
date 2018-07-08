@@ -89,9 +89,11 @@ $(function () {
         }
     });
 
-    $('p').each(function () {
-        console.log($(this).text());
-    })
+    $('input').css({
+        background: '#f00',
+        padding: '10px',
+        borderColor: '#000'
+    });
 
 
 });
