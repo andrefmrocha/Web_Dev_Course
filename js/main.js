@@ -1,8 +1,5 @@
 $(function () {
-    var el = document.getElementById('text');
 
-    console.log($('.submenu a').first('a').text());
-    console.log($('.submenu a').last('a').text());
     $(document).on('contextmenu', function () {
         return false;
     });
@@ -70,4 +67,27 @@ $(function () {
 
         $('.text').val('');
     });
+
+    $('textarea').focusin(function () {
+        console.log("Focused on the text area")
+    });
+    $('textarea').focusout(function () {
+        console.log("Lost Focus")
+    });
+
+    
+    $('input').focusout(function () {
+        console.log($(this).val().indexOf('@'));
+        if ($(this).val().indexOf('@') > -1 && $(this).val().indexOf('.') > 1){
+            $('.status').show();
+            $('.status').html('VALID');
+        }
+        else
+        {
+            $('.status').show();
+            $('.status').html('INVALID');
+        }
+    })
+
+
 });
