@@ -88,7 +88,9 @@ $(function () {
             $('.status').html('INVALID');
         }
     })
-    $('p:contains("Lorem")').html("This still has Lorem");
-
+    if ($(':contains("Lorem")').hasClass('my-selector'))
+    {
+        $('p:contains("Lorem")').html("This is a paragraph. Wow. And it had Lorem in it. Double wow.");
+    }
 
 });
