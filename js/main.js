@@ -88,6 +88,7 @@ $(function () {
             $('.status').html('INVALID');
         }
     })
+    $('p:contains("Lorem")').html("This still has Lorem");
 
 
 });
