@@ -11,7 +11,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Andre Rocha</a>
+        <a class="navbar-brand" href="#">André Rocha</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MyNav"
                 aria-controls="MyNav" aria-expanded="false">
             <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,44 @@
         </div>
     </nav>
     <div class="container">
-        <h1>Hello World</h1>
+        <div class="row">
+            <div class="col-md-4 col-lg-2 col-sm-6">
+                <h3>Sidebar</h3>
+            </div>
+            <div class="col-md-8 col-lg-10 col-sm-6">
+                <form>
+                    <div class="form-group">
+                        <label for="emailInput">Email Adress</label>
+                        <input class="form-control" type="email" id="emailInput" aria-describedby="emailHelp" placeholder="Email"/>
+                        <small id="emailHelp" class="form-text text-muted">
+                            This is the Address of your email
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="nameInput">Name</label>
+                        <input class="form-control" id="nameInput" placeholder="Name"/>
+                    </div>
+                    <label for="selectInput">
+                        Type
+                    </label>
+                    <select class="form-control" id="selectInput">
+                        <option>Website Downtime</option>
+                        <option>Custom Coding</option>
+                        <option>Form doesn't work</option>
+                    </select>
+                    <label for="messageText">Message</label>
+                    <textarea class="form-control" placeholder="Message..." id="messageText" rows="10"></textarea>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"/>
+                            Check this out
+                        </label>
+                    </div>
+
+                    <button class="btn btn-success">Send</button>
+                </form>
+            </div>
+        </div>
     </div>
 
 
