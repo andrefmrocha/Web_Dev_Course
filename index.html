@@ -1,60 +1,34 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My first website</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="This page was used by to learn html">
-        <meta name="keywords" content="html5,udemy,code">
-        <meta name="author" content="Andre">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div id="context">
-            <ul class="context-menu">
-                <li><a href="#" class="hidden newtab">Open in new tab</a> </li>
-                <li><a href="#">Back</a> </li>
-                <li><a href="#">Forward</a> </li>
-                <li><a href="#">Reload</a> </li>
-                <li><a href="#" class="hidden saveimg">Save image as</a> </li>
-                <li><a href="#" class="hidden save">Save as</a> </li>
-                <li><a href="#">Inspect Element</a> </li>
-            </ul>
-        </div>
-        <header id="main-header">
-            <h1 id="site-title">Best News Ever!</h1>
-            <ul class="profile-menu">
-                <li><a class="profile-menu-trigger dropdown-trigger" data-trigger = "dropdown" href="#">Logged in as andrefmrocha</a>
-                    <ul class="profile-submenu submenu">
-                        <li><a href="#">My Account</a> </li>
-                        <li><a href="#">Profile</a> </li>
-                        <li><a href="#">Settings</a> </li>
-                        <li><a href="#">Log out</a> </li>
-                    </ul>
-                </li>
-            </ul>
-        </header>
-        <section>
-            <p>Just filling up some space</p>
-            <p>Just filling even more space cause we need to need to stuff with a lot of stuff</p>
-            <form action="submit.php">
-                <textarea class="text" placeholder="type something"></textarea> <br/>
-                <input name="email" placeholder="Email"/> <br/> <br/>
-                <p class="status"></p>
-                <button id="append">Append</button>
-                <button id="prepend">Prepend</button>
-                <button id="replace">Replace</button>
-            </form>
-        </section>
-        <section id="main">
-            <img src="./img/coke.jpg"/>
-            <a href="https://google.com" target="_blank">Go to Google</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="css/tether.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
 
-            <p class="my-selector">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin urna sed hendrerit tincidunt. Duis ultrices lorem eget feugiat cursus. Nulla consectetur a ante non fringilla. Maecenas maximus magna eu venenatis fermentum. Nam nec sapien pretium dolor porta vehicula at ut turpis. Maecenas id ultricies nulla. Nulla at libero eu orci laoreet fermentum vitae eu libero.
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <a class="navbar-brand" href="#">Andre Rocha</a>
+    <button class="navbar-toggler nabvar-toggler-right" type="button" data-toggle="collapse" data-target="#MyNav"
+            aria-controls="MyNav" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="MyNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link">Home</a> </li>
+            <li class="nav-item"><a class="nav-link">About</a> </li>
+            <li class="nav-item"><a class="nav-link">Contact</a> </li>
+        </ul>
+    </div>
+</nav>
 
-                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut dui nunc. Vivamus tincidunt suscipit nisi quis dignissim. Vivamus interdum ornare mattis. Mauris sed dolor sed sapien tincidunt sollicitudin sit amet consectetur odio. Donec molestie, ex at commodo sodales, felis libero eleifend lorem, eget tristique quam massa a velit. Sed in lorem dapibus purus dictum rhoncus id non sapien. Donec congue nunc et lacus ornare placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-        </section>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+<h1> Hello World</h1>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
